@@ -1,4 +1,4 @@
-package jp.co.opst.s029817.study_java11.sandbox;
+package jp.co.opst.nishimoto_satoshi.study_java11.sandbox;
 
 import static org.junit.jupiter.api.Assertions.*;
 
