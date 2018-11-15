@@ -15,7 +15,7 @@
  * ローカル変数の宣言時に <code>var</code> を記述することで、
  * 宣言する変数の型を省略することが可能になりました。
  * ただし、初期値によって型が推論可能である必要があります。
- * {@link jp.co.opst.nishimoto_satoshi.study_java11.java10.Jep286 Jep286} を参照してください。
+ * {@link jp.co.opst.nishimoto_satoshi.study_java11.java10.jep.Jep286 Jep286} を参照してください。
  * </p>
  *
  * <h3>296: Consolidate the JDK Forest into a Single Repository</h3>
@@ -100,4 +100,4 @@
  * またそれによりバージョン番号のルールが変わりました。
  * </p>
  */
-package jp.co.opst.nishimoto_satoshi.study_java11.java10;
+package jp.co.opst.nishimoto_satoshi.study_java11.java10.jep;

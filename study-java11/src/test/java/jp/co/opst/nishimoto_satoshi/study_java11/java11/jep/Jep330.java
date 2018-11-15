@@ -1,4 +1,4 @@
-package jp.co.opst.nishimoto_satoshi.study_java11.java11;
+package jp.co.opst.nishimoto_satoshi.study_java11.java11.jep;
 
 import java.util.List;
 

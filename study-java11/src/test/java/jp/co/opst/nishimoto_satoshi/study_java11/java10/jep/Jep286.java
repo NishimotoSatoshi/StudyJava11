@@ -1,4 +1,4 @@
-package jp.co.opst.nishimoto_satoshi.study_java11.java10;
+package jp.co.opst.nishimoto_satoshi.study_java11.java10.jep;
 
 import java.util.ArrayList;
 import java.util.HashMap;

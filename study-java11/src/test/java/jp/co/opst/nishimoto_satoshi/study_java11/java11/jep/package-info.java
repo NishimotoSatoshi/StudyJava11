@@ -64,7 +64,7 @@
  *
  * <p>
  * HTTP Client API が正式に実装されました。
- * {@link jp.co.opst.nishimoto_satoshi.study_java11.java11.Jep321 Jep321} を参照してください。
+ * {@link jp.co.opst.nishimoto_satoshi.study_java11.java11.jep.Jep321 Jep321} を参照してください。
  * </p>
  *
  * <h3>323: Local-Variable Syntax for Lambda Parameters</h3>
@@ -73,7 +73,7 @@
  * ラムダ式の引数に var が使用できるようになりました。
  * 特にプログラミング上の利点はないようにみえますが、
  * var を記述すると、アノテーションが記述できるようです。
- * {@link jp.co.opst.nishimoto_satoshi.study_java11.java11.Jep323 Jep323} を参照してください。
+ * {@link jp.co.opst.nishimoto_satoshi.study_java11.java11.jep.Jep323 Jep323} を参照してください。
  * </p>
  *
  * <h3>324: Key Agreement with Curve25519 and Curve448</h3>
@@ -109,7 +109,7 @@
  * 1 つの Java ファイルで依存関係が完結していて、かつ main メソッドが実装されている場合、
  * その Java ファイルを Java コマンドで実行できるようになりました。
  * なお、JRE への依存は大丈夫のようです、
- * {@link jp.co.opst.nishimoto_satoshi.study_java11.java11.Jep330 Jep330} を参照してください。
+ * {@link jp.co.opst.nishimoto_satoshi.study_java11.java11.jep.Jep330 Jep330} を参照してください。
  * </p>
  *
  * <h3>331: Low-Overhead Heap Profiling</h3>
@@ -145,4 +145,4 @@
  * 圧縮スキーマのひとつである Pack200 の API が非推奨になりました。
  * </p>
  */
-package jp.co.opst.nishimoto_satoshi.study_java11.java11;
+package jp.co.opst.nishimoto_satoshi.study_java11.java11.jep;
