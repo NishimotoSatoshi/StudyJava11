@@ -3,6 +3,7 @@ package jp.co.opst.nishimoto_satoshi.study_java11.java11.api;
 import static org.junit.jupiter.api.Assertions.*;
 
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.StringWriter;
 import java.nio.charset.Charset;
 import java.nio.file.Files;
@@ -35,18 +36,21 @@ class JavaIoTest {
 	}
 
 	@Test
-	public void testFileReaderConstractor() throws Exception {
+	public void testFileReaderAndFileWriterConstractor() throws Exception {
 		var path = folder.getRoot().toPath().resolve("temp.txt");
 		var text = "これはテストです。";
 		var ms932 = Charset.forName("MS932");
-		Files.writeString(path, text, ms932);
 
-		var out = new StringWriter();
-
-		try (var in = new FileReader(path.toString(), ms932)) {
-			in.transferTo(out);
+		try (var out = new FileWriter(path.toString(), ms932)) {
+			out.append(text);
 		}
 
-		assertEquals(text, out.toString());
+		var buffer = new StringWriter();
+
+		try (var in = new FileReader(path.toString(), ms932)) {
+			in.transferTo(buffer);
+		}
+
+		assertEquals(text, buffer.toString());
 	}
 }
