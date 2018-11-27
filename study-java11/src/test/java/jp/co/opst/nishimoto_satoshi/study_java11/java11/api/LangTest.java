@@ -38,8 +38,8 @@ class LangTest {
 
 	@Test
 	public void testStringLines() {
-		var actual = "foo\r\nbar\r\nbaz\r\n".lines().anyMatch("bar"::equals);
-		assertTrue(actual);
+		var actual = "A\rB\nC\r\nD\n\rE\r\rF\n\nG".lines().toArray(String[]::new);
+		assertArrayEquals(new String[] {"A", "B", "C", "D", "", "E", "", "F", "", "G"}, actual);
 	}
 
 	@Test
