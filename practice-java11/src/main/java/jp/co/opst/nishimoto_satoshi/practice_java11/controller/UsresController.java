@@ -1,5 +1,7 @@
 package jp.co.opst.nishimoto_satoshi.practice_java11.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,5 +33,12 @@ public class UsresController {
 			@PathVariable("id") @ApiParam("ユーザーID") Integer id) {
 
 		return usersRepository.findById(id).orElseThrow(IdNotFound::new);
+	}
+
+	@GetMapping
+	@ResponseStatus(HttpStatus.OK)
+	@ApiOperation("全ユーザーを取得します。")
+	public List<Users> get() {
+		return usersRepository.findAll();
 	}
 }
