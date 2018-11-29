@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
 import jp.co.opst.nishimoto_satoshi.practice_java11.domain.repository.ItemsRepository;
+import jp.co.opst.nishimoto_satoshi.practice_java11.domain.repository.UsersRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
@@ -20,6 +21,8 @@ class DatabaseTest {
 
 	private final ItemsRepository itemsRepository;
 
+	private final UsersRepository usersRepository;
+
 	@BeforeEach
 	public void setUp(TestInfo info) {
 		info.getTestMethod()
@@ -28,8 +31,16 @@ class DatabaseTest {
 	}
 
 	@Test
-	public void test() throws Exception{
+	public void testItems() throws Exception{
 		itemsRepository.findAll()
+			.stream()
+			.map(Object::toString)
+			.forEach(log::info);
+	}
+
+	@Test
+	public void testUsers() throws Exception{
+		usersRepository.findAll()
 			.stream()
 			.map(Object::toString)
 			.forEach(log::info);

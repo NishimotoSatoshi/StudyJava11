@@ -23,7 +23,7 @@ public class Swagger2Config {
 	@Bean
     public Docket docket() {
 		@SuppressWarnings("unchecked")
-		Predicate<String> paths = Predicates.or(Predicates.containsPattern("/items"));
+		Predicate<String> paths = Predicates.or(Predicates.containsPattern("^/(items|users)\\b"));
 
 		var apiInfo = new ApiInfo(
 				"サンプルAPI",
@@ -44,6 +44,9 @@ public class Swagger2Config {
 				.paths(paths)
 				.build()
 				.apiInfo(apiInfo)
-				.tags(new Tag("ITEMS", "商品台帳"))	;
+				.tags(
+						new Tag("ITEMS", "商品台帳"),
+						new Tag("USERS", "ユーザー台帳")
+				);
 	}
 }
