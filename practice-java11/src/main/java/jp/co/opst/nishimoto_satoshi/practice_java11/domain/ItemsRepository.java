@@ -1,4 +1,4 @@
-package jp.co.opst.nishimoto_satoshi.practice_java11.domain.repository;
+package jp.co.opst.nishimoto_satoshi.practice_java11.domain;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 

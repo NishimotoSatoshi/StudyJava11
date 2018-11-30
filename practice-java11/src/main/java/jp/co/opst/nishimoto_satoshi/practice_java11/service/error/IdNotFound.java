@@ -1,4 +1,4 @@
-package jp.co.opst.nishimoto_satoshi.practice_java11.controller.error;
+package jp.co.opst.nishimoto_satoshi.practice_java11.service.error;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;

@@ -8,8 +8,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 
-import jp.co.opst.nishimoto_satoshi.practice_java11.domain.repository.ItemsRepository;
-import jp.co.opst.nishimoto_satoshi.practice_java11.domain.repository.UsersRepository;
+import jp.co.opst.nishimoto_satoshi.practice_java11.domain.ItemsRepository;
+import jp.co.opst.nishimoto_satoshi.practice_java11.domain.UsersRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 
